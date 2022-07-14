@@ -1,9 +1,9 @@
 :root {
   --clr-primary-900: hsl(216, 12%, 8%);
   --clr-primary-800: hsl(213, 19%, 18%);
-  --card-color-400: hsla(216, 12%, 54%, 12%);
+  --clr-primary-400: hsla(216, 12%, 54%, 12%);
   --clr-primary-300: hsl(217, 12%, 63%);
-  --card-color-100: hsl(0, 0%, 100%);
+  --clr-primary-100: hsl(0, 0%, 100%);
 
   --clr-accent-500: hsl(25, 97%, 53%);
   --desktop-width: 1440px;
@@ -13,10 +13,153 @@
   --ft-weight-400: 400;
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-#app, #star, #thank-you,
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: var(--clr-primary-300);
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+#app,
+#star,
+#thank-you,
 ul,
 li {
   display: flex;
@@ -25,19 +168,20 @@ li {
 }
 
 h1 {
-  color: var(--card-color-100);
+  color: var(--clr-primary-100);
   font-weight: var(--ft-weight-700);
   font-size: 1.5em;
 }
 
 #app {
-  font-family: 'Overpass', sans-serif;
+  font-family: "Overpass", sans-serif;
   font-size: var(--ft-size);
   height: 100vh;
   background-color: var(--clr-primary-900);
 }
 
-#voting-card, #result-card {
+#voting-card,
+#result-card {
   width: 320px;
   height: 320px;
   border-radius: 5%;
@@ -58,7 +202,7 @@ p {
 li {
   width: 35px;
   height: 35px;
-  background-color: var(--card-color-400);
+  background-color: var(--clr-primary-400);
   border-radius: 50%;
 }
 
@@ -69,11 +213,12 @@ li {
 
 li:hover {
   background-color: var(--clr-accent-500);
-  color: var(--card-color-100);
+  color: var(--clr-primary-100);
   cursor: pointer;
 }
 
-#submit, #results {
+#submit,
+#results {
   font-size: 0.8em;
   font-weight: var(--ft-weight-400);
   border: 0;
@@ -88,9 +233,9 @@ li:hover {
   position: relative;
 }
 
-#submit {    
-  color: var(--card-color-100);
-  background-color: var(--clr-accent-500);   
+#submit {
+  color: var(--clr-primary-100);
+  background-color: var(--clr-accent-500);
   cursor: pointer;
   bottom: 13px;
   width: 100%;
@@ -98,22 +243,21 @@ li:hover {
 
 #results {
   color: var(--clr-accent-500);
-  background-color: var(--card-color-400); 
+  background-color: var(--clr-primary-400);
   padding: 7px 15px 7px 15px;
 }
 
 #result-card > * {
-  margin-top: 20px;  
+  margin-top: 20px;
   text-align: center;
 }
 
 #submit:hover {
-  background-color: var(--card-color-100);
+  background-color: var(--clr-primary-100);
   color: var(--clr-accent-500);
 }
 
 .selected {
   background-color: hsla(216, 12%, 54%, 100%);
-  color: var(--card-color-100);
+  color: var(--clr-primary-100);
 }
-

@@ -1,6 +1,3 @@
-import './reset.css';
-import './style.css';
-
 let selectedValue = 0;
 
 const resultCard = document.getElementById('result-card')! as HTMLDivElement;
