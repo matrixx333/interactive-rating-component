@@ -3,7 +3,7 @@ const path = require('path');
 
 module.exports = {
     mode: 'development',
-    entry: './src/app.ts',
+    entry: './app.ts',
     output: {
         filename: 'bundle.js',
         path: path.join(__dirname, '/dist')
@@ -14,8 +14,8 @@ module.exports = {
     devtool: 'inline-source-map',
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/index.html',
-            favicon: './src/images/favicon-32x32.png'
+            template: './index.html',
+            favicon: './images/favicon-32x32.png'
         })
     ],
     module: {
