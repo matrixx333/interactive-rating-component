@@ -1,0 +1,119 @@
+:root {
+  --clr-primary-900: hsl(216, 12%, 8%);
+  --clr-primary-800: hsl(213, 19%, 18%);
+  --card-color-400: hsla(216, 12%, 54%, 12%);
+  --clr-primary-300: hsl(217, 12%, 63%);
+  --card-color-100: hsl(0, 0%, 100%);
+
+  --clr-accent-500: hsl(25, 97%, 53%);
+  --desktop-width: 1440px;
+  --mobile-width: 375px;
+  --ft-size: 15px;
+  --ft-weight-700: 700;
+  --ft-weight-400: 400;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+#app, #star, #thank-you,
+ul,
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: var(--card-color-100);
+  font-weight: var(--ft-weight-700);
+  font-size: 1.5em;
+}
+
+#app {
+  font-family: 'Overpass', sans-serif;
+  font-size: var(--ft-size);
+  height: 100vh;
+  background-color: var(--clr-primary-900);
+}
+
+#voting-card, #result-card {
+  width: 320px;
+  height: 320px;
+  border-radius: 5%;
+  background-color: var(--clr-primary-800);
+}
+
+#voting-card > div,
+h1,
+p {
+  margin: 20px;
+}
+
+p {
+  line-height: 1.2em;
+}
+
+#star,
+li {
+  width: 35px;
+  height: 35px;
+  background-color: var(--card-color-400);
+  border-radius: 50%;
+}
+
+li {
+  margin: 9px;
+  padding: 3px;
+}
+
+li:hover {
+  background-color: var(--clr-accent-500);
+  color: var(--card-color-100);
+  cursor: pointer;
+}
+
+#submit, #results {
+  font-size: 0.8em;
+  font-weight: var(--ft-weight-400);
+  border: 0;
+  background: none;
+  box-shadow: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  border-radius: 20px;
+  position: relative;
+}
+
+#submit {    
+  color: var(--card-color-100);
+  background-color: var(--clr-accent-500);   
+  cursor: pointer;
+  bottom: 13px;
+  width: 100%;
+}
+
+#results {
+  color: var(--clr-accent-500);
+  background-color: var(--card-color-400); 
+  padding: 7px 15px 7px 15px;
+}
+
+#result-card > * {
+  margin-top: 20px;  
+  text-align: center;
+}
+
+#submit:hover {
+  background-color: var(--card-color-100);
+  color: var(--clr-accent-500);
+}
+
+.selected {
+  background-color: hsla(216, 12%, 54%, 100%);
+  color: var(--card-color-100);
+}
+
