@@ -1,0 +1,13 @@
+
+
+#selected-rating 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--ORANGE);
+    background-color: var(--DARK_BLUE);
+    border-radius: 22.5px;
+    width: 193px; 
+    height: 32px;
+}

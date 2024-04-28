@@ -1,25 +1,53 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import SelectRating from "./containers/select-rating/SelectRating";
+import DisplayRating from "./containers/display-rating/DisplayRating";
+import Rating from "./models/rating";
 
 function App() {
+  let ratingObjects: Rating[] = [];
+
+  for (let i = 1; i <= 5; i++) {
+    let rating: Rating = { value: i, isActive: false };
+    ratingObjects.push(rating);
+  }
+
+  const [submitted, setSubmitted] = useState(false);
+  const [selectedRating, setSelectedRating] = useState(0);
+  const [ratings, setRatings] = useState(ratingObjects);
+
+  function handleRatingClick(value: number) {
+    ratings.map((rating) => (rating.isActive = false));
+
+    const updatedRatings = ratings.map((rating) => {
+      if (rating.value === value) {
+        return { ...rating, isActive: !rating.isActive };
+      }
+
+      return rating;
+    });
+
+    setRatings(updatedRatings);
+    setSelectedRating(value);
+  }
+
+  const handleSubmitted = () => {
+    setSubmitted(true);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn gh-pages
-        </a>
-      </header>
-    </div>
+    <>
+      <main className="App">
+        {!submitted ? (
+          <SelectRating
+            ratings={ratings}
+            handleSubmitted={handleSubmitted}
+            handleRatingClick={handleRatingClick}></SelectRating>
+        ) : (
+          <DisplayRating selectedRating={selectedRating} />
+        )}
+      </main>
+    </>
   );
 }
 

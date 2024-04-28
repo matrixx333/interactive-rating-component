@@ -1,0 +1,10 @@
+
+.star {
+    width: 48px;
+    height: 48px;
+    background-color: var(--DARK_BLUE);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
