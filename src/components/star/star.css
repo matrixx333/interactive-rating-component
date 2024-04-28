@@ -1,0 +1,23 @@
+
+.star {
+    width: 48px;
+    height: 48px;
+    background-color: var(--DARK_BLUE);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+
+@media screen and (max-width: 600px){
+    .star {
+        width: 40px;
+        height: 40px;
+    }
+
+    img {
+        width: 13.96px;
+        height: 13.33px;
+    }
+}

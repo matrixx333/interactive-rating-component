@@ -1,0 +1,33 @@
+#rating-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating-button {
+    width: 51px;
+    height: 51px;
+    background-color: var(--DARK_BLUE);
+    color: var(--MEDIUM_GRAY);
+    border-radius: 50%;
+    border: 0;
+}
+
+.rating-button:hover {
+    background-color: var(--ORANGE);
+    color: var(--PURE_WHITE);
+    cursor: pointer;
+}
+
+.active {
+    background-color: var(--MEDIUM_GRAY);
+    color: var(--PURE_WHITE);
+    border: 0;
+}
+
+@media screen and (max-width: 600px){
+    .rating-button {
+        width: 42px;
+        height: 42px;
+    }
+}

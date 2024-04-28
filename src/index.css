@@ -1,0 +1,18 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital@0;1&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --BG-COLOR: #131518;
+  --DARK_BLUE: #262E38;
+  --LIGHT_GREY: #969FAD;
+  --MEDIUM_GRAY: #7C8798;
+  --ORANGE: #FC7614;
+  --PURE_WHITE: #FFFFFF;
+  --BLACK-GRADIENT: linear-gradient(180deg, rgba(35,42,52,1) 0%, rgba(24,30,39,1) 100%); 
+}
