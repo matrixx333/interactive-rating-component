@@ -16,28 +16,3 @@ html, body {
   align-items: center;
   height: 100%;
 }
-
-.heading-lg {
-  font-weight: bold;
-  font-size: 28px;
-  line-height: normal;
-  letter-spacing: 0px;
-}
-
-.heading-med {
-  font-weight: bold;
-  font-size: 15px;
-  line-height: normal;
-  letter-spacing: 2px;
-}
-
-p {
-  color: var(--LIGHT_GREY);
-  font-size: 15px;
-}
-
-h1 {
-  height: 35px;
-  width: 201px;
-  color: var(--PURE_WHITE);
-}

@@ -1,3 +1,4 @@
+import "../../rating-component/rating-component.css";
 import "./display-rating.css";
 import onlinePaymentImage from "../../../assets/online-payment.png";
 import SelectedRating from "../../../components/selected-rating/SelectedRating";
@@ -8,7 +9,7 @@ interface Props {
 
 function DisplayRating({selectedRating}: Props) {
   return (
-      <div id="display-rating-container">
+      <div id="display-rating-container" className="card">
         <img id="online-payment" src={onlinePaymentImage} alt="online payment" />
         <SelectedRating selectedRating={selectedRating}></SelectedRating>
         <h1 id="thank-you" className="heading-lg">Thank you!</h1>

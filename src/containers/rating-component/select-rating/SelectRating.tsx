@@ -1,3 +1,4 @@
+import "../../rating-component/rating-component.css";
 import "./select-rating.css";
 import Star from "../../../components/star/Star";
 import SubmitButton from "../../../components/submit-button/SubmitButton";
@@ -12,7 +13,7 @@ interface Props {
 
 function SelectRating({ ratings, handleSubmitted, handleRatingClick }: Props) {
   return (
-    <div id="select-rating-container">
+    <div id="select-rating-container" className="card">
       <Star></Star>
       <h1 className="heading-lg">How did we do?</h1>
       <p>
