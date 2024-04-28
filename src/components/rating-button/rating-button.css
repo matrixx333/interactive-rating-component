@@ -24,3 +24,10 @@
     color: var(--PURE_WHITE);
     border: 0;
 }
+
+@media screen and (max-width: 600px){
+    .rating-button {
+        width: 42px;
+        height: 42px;
+    }
+}

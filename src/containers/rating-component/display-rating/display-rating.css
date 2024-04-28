@@ -18,3 +18,15 @@
     width: 340px;
     height: 72px;
 }
+
+@media screen and (max-width: 600px){
+    #display-rating-comment {
+        width: 279px;
+        height: 66px;
+    }
+    
+    #online-payment {
+        width: 144px;
+        height: 96px;
+    }
+}
